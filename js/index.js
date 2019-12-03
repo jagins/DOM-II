@@ -87,3 +87,20 @@ funBusImg.addEventListener('dblclick', () =>
 {
     funBusImg.src = "../img/fun-bus.jpg";
 })
+
+const body = document.querySelector('body');
+body.addEventListener('click', () =>
+{
+    body.style.background = "linear-gradient(90deg, rgba(19,36,92,1) 0%, rgba(9,41,121,1) 35%, rgba(0,212,255,1) 100%)";
+    
+})
+
+const button = document.querySelectorAll('.btn');
+button.forEach(btn =>
+{
+    btn.addEventListener('click', (event) =>
+    {
+        event.stopPropagation();
+        alert('sign up button pressed propagation crisis overted')
+    })
+});
