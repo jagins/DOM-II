@@ -12,6 +12,10 @@ navLinks.forEach(link =>
         link.style.color = '#212529';
     });
 
+    link.addEventListener('click', (event) =>
+    {
+        event.preventDefault();
+    })
 })
 
 //blur the first image in the content-section on click and default on double click
