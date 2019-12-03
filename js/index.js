@@ -15,7 +15,7 @@ navLinks.forEach(link =>
 })
 
 //blur the first image in the content-section on click and default on double click
-const image = document.querySelector('.content-section .img-content');
+const image = document.querySelector('.img-content');
 image.addEventListener('click', () =>
 {
     image.style.filter = "blur(10px)";
