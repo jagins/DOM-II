@@ -14,19 +14,22 @@ navLinks.forEach(link =>
 
     link.addEventListener('click', (event) =>
     {
+        event.stopPropagation();
         event.preventDefault();
     })
 })
 
 //blur the first image in the content-section on click and default on double click
 const image = document.querySelector('.img-content');
-image.addEventListener('click', () =>
+image.addEventListener('click', (event) =>
 {
+    event.stopPropagation();
     image.style.filter = "blur(10px)";
 })
 
 image.addEventListener('dblclick', () =>
 {
+    event.stopPropagation(event);
     image.style.filter = "blur(0px)";
 })
 
